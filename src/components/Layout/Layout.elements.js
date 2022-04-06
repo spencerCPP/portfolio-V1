@@ -2,11 +2,14 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
 export const GlobalStyleBody = createGlobalStyle`
+html, body{
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  background-color: #0f0f0f;
+}
+
 body{
-    height: 100vh;
-    background-color: #000;
-    margin: 0;
-    position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',  'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   'sans-serif';
@@ -15,26 +18,32 @@ body{
 }
 #root{
     height: 100vh;
-    background-color: #000;
+    background-color: #0f0f0f;
     margin: 0;
 }
 footer{
     height: 6rem;
 }
+header{
+  height: 4rem;
+}
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
 `;
 
 export const HeaderStyle = styled.header`
   header {
-    display: inline-block;
-    background-color: red;
-    z-index: 1000;
-    height: 60px;
+  
   }
 `;
 
 export const FooterStyle = styled.footer`
   footer {
     background-color: purple;
+    position: fixed;
   }
 `;
 

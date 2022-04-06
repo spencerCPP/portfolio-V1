@@ -1,21 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import Main from "../Main";
-import { GlobalStyleBody, HeaderStyle, GridWrapper, FooterStyle } from "./Layout.elements";
+import Dropdown from "../Dropdown";
+import { Outlet } from "react-router-dom";
+import {
+  GlobalStyleBody,
+  HeaderStyle,
+  GridWrapper,
+  FooterStyle,
+} from "./Layout.elements";
+import Sidebar from "../Sidebar";
+
+
 
 const Layout = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
+
+
   return (
     <React.Fragment>
       <GlobalStyleBody />
+      <Sidebar />
       <GridWrapper>
         <HeaderStyle>
-          <Navbar />
+          <Dropdown isOpen={isOpen} toggle={toggle}/>
+          <Navbar toggle={toggle}/>
         </HeaderStyle>
-        <Main />
+       
+        <Outlet />
         <FooterStyle>
           <Footer />
-        </FooterStyle> 
+        </FooterStyle>
       </GridWrapper>
     </React.Fragment>
   );
