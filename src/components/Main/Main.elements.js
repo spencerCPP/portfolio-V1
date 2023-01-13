@@ -88,6 +88,8 @@ margin: 30px;
 export const SoftwareHead = styled.h1`
 font-family: 'Work Sans', sans-serif;
 font-size: 30px;
+color: #fff;
+opacity: 0.10;
 
 `
 
