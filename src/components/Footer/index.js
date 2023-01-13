@@ -7,7 +7,7 @@ const Footer = () => {
       <FooterContainer>
         <FooterText>
           {/* <div>© Spencer Barrett</div> */}
-          <div>Welcome</div>
+          <div>email: contact@spencer-barrett.com</div>
         </FooterText>
       </FooterContainer>
     </>

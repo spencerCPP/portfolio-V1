@@ -11,6 +11,6 @@ export const FooterContainer = styled.div`
 
 export const FooterText = styled.div`
   color: #fff;
-  font-size: 0.5em;
+  font-size: .75em;
   font-family: "Work Sans", sans-serif;
 `;
