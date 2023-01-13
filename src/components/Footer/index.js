@@ -7,7 +7,7 @@ const Footer = () => {
       <FooterContainer>
         <FooterText>
           {/* <div>© Spencer Barrett</div> */}
-          <div>Yo</div>
+          <div>Welcome</div>
         </FooterText>
       </FooterContainer>
     </>

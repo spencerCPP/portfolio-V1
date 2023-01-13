@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SidebarContainer = styled.div`
 position: fixed;
-right: 0;
+right: 0rem;
 top: 4rem;
 bottom: 6rem;
 min-height: auto;
@@ -13,6 +13,7 @@ align-items: center;
 `
 
 export const SidebarItemList = styled.ul`
+z-index: 1;
 display: grid;
 grid-template-rows: auto auto;
 grid-template-columns: auto;
